@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    background: #035c69;
+    color: #f5fbfa;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #03a1b8;
+}
+
+.banner {
+    height: 300px;
+}
+
+img {
+    width: minmax(auto, 100%);
+}
+
+div {
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+input {
+    height: 50px;
+    width: 60px;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 18px 2px 0 2px;
+    background: #f5fbfa;
+    height: 25px;
+    box-shadow: 2px 2px black;
+    font-weight: bold;
+    border-style: none;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: .9;
+}
+
+.confirma {
+    background-color: #06a006;
+}
+
+.confirma:hover {
+    background-color: #06a0069a;
+    transition: 0.3s;
+}
+.branco {
+    background-color: #ffffff;
+}
+
+.branco:hover {
+    background-color: #ffffffa2;
+    transition: 0.3s;
+}
+
+.corrige {
+    background-color: #c70000;
+    color: aliceblue;
+}
+
+.botoes {
+    margin: 5px;
+    background: black;
+    color: white;
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.botoes:hover {
+    background: rgba(0, 0, 0, 0.582);
+    transition: 0.3s;
+}
+
+a {
+    border-style: none;
+    text-decoration: none;
+    background: #f5fbfa;
+    color: black;
+    padding: 8px;
+    box-shadow: 2px 2px black;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

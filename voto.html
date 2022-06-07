@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2022</title>
+    <link rel="stylesheet" href="voto.css">
+</head>
+<body>
+    <header>
+        <img src="banner.png" alt="Banner do Site" class="banner">
+    </header>
+    <section id="corpo">
+        <h1>Eleições 2022</h1>
+        <div id="campo">
+            <h3>Vote no seu candidato digitando o número abaixo:</h3>
+            <input type="number" name="numero" id="numero" readonly><br>
+            <button type="button" class="botoes" onclick="botao(7)">7</button>
+            <button type="button" class="botoes" onclick="botao(8)">8</button>
+            <button type="button" class="botoes" onclick="botao(9)">9</button><br>
+            <button type="button" class="botoes" onclick="botao(4)">4</button>
+            <button type="button" class="botoes" onclick="botao(5)">5</button>
+            <button type="button" class="botoes" onclick="botao(6)">6</button><br>
+            <button type="button" class="botoes" onclick="botao(n=1)">1</button>
+            <button type="button" class="botoes" onclick="botao(2)">2</button>
+            <button type="button" class="botoes" onclick="botao(3)">3</button><br>
+            <button type="button" class="botoes" onclick="botao(0)">0</button><br>
+            <button class="confirma" type="button" onclick="votar()">Confirma</button>
+            <button class="branco" type="button" onclick="branco()">Branco</button>
+            <button class="corrige" type="button" onclick="corrige()">Corrige</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;OnofreTech</p>
+    </footer>
+    <script src="voto.js"></script>
+</body>
+</html>
