@@ -1,12 +1,12 @@
 let candidatos = [
     {
-        nome: 'Bolsonaro',
-        imagem: 'bolsonaro.png',
+        nome: 'Candidato A',
+        imagem: 'avatar.jpg',
     },
 
     {
-        nome: 'Lula',
-        imagem: 'lula.png',
+        nome: 'Candidato B',
+        imagem: 'avatar.jpg',
     }
 ]
 // Total de votos
