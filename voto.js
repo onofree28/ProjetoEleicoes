@@ -16,19 +16,19 @@ const { totalA, totalB } = JSON.parse(document.cookie)
 function votar() {
     let numero = Number(document.getElementById('numero').value)
     let { totalA = 0, totalB = 0 } = document.cookie ? JSON.parse(document.cookie) : {}
-    if (numero === 17) {
+    if (numero === 10) {
         totalA++
         campo.innerHTML = `
         <div id = "resultado">
         <h2>Você votou em ${candidatos[0].nome}</h2>
-        <img src="${candidatos[0].imagem}"><br>
+        <img class = "candidato"src="${candidatos[0].imagem}"><br>
         </div>`
-    } else if (numero === 13){
+    } else if (numero === 12){
         totalB++
         campo.innerHTML = `
         <div id = "resultado">
         <h2>Você votou em ${candidatos[1].nome}</h2>
-        <img src="${candidatos[1].imagem}"><br>
+        <img class = "candidato" src="${candidatos[1].imagem}"><br>
         </div>`
     } else {
         campo.innerHTML = `

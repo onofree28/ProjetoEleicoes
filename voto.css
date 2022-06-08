@@ -25,6 +25,10 @@ img {
     width: minmax(auto, 100%);
 }
 
+.candidato {
+    border-radius: 50%;
+}
+
 div {
     text-align: center;
     padding: 15px;
