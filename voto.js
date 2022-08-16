@@ -1,4 +1,4 @@
-let candidatos = [
+const candidatos = [
     {
         nome: 'Candidato A',
         imagem: 'avatar.jpg',
@@ -19,22 +19,31 @@ function votar() {
     if (numero === 10) {
         totalA++
         campo.innerHTML = `
+        <audio src="./confirma-som.mp3"></audio>
         <div id = "resultado">
         <h2>Você votou em ${candidatos[0].nome}</h2>
         <img class = "candidato"src="${candidatos[0].imagem}"><br>
         </div>`
+        const audio = document.querySelector('audio')
+        audio.play()
     } else if (numero === 12){
         totalB++
         campo.innerHTML = `
+        <audio src="./confirma-som.mp3"></audio>
         <div id = "resultado">
         <h2>Você votou em ${candidatos[1].nome}</h2>
         <img class = "candidato" src="${candidatos[1].imagem}"><br>
         </div>`
+        const audio = document.querySelector('audio')
+        audio.play()
     } else {
         campo.innerHTML = `
+        <audio src="./confirma-som.mp3"></audio>
         <div id = "resultado">
         <h2>Você votou <strong>NULO</strong></h2>
         </div>`
+        const audio = document.querySelector('audio')
+        audio.play()
     }
     document.cookie = `{"totalA":${totalA},"totalB":${totalB}}`
     console.log(numero)
@@ -49,15 +58,21 @@ function branco() {
     if (totalA < totalB) {
         totalB++
         campo.innerHTML = `
+            <audio src="./confirma-som.mp3"></audio>
             <div id = "resultado">
                 <h2>Você votou em Branco!</h2>
             </div>`
+            const audio = document.querySelector('audio')
+            audio.play()
     } else if (totalB < totalA) {
         totalA++
         campo.innerHTML = `
+            <audio src="./confirma-som.mp3"></audio>
             <div id = "resultado">
                 <h2>Você votou em Branco!</h2>
             </div>`
+            const audio = document.querySelector('audio')
+            audio.play()
     } else {
         alert('Você deve votar Nulo ou em algum candidato!')
     }
