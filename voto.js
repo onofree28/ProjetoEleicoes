@@ -13,7 +13,7 @@ const candidatos = [
 let campo = document.getElementById('campo')
 const { totalA, totalB } = JSON.parse(document.cookie)
 // Vota em algum candidato
-function votar() {
+const votar = () => {
     let numero = Number(document.getElementById('numero').value)
     let { totalA = 0, totalB = 0 } = document.cookie ? JSON.parse(document.cookie) : {}
     if (numero === 10) {
@@ -53,7 +53,7 @@ function votar() {
 }
 
 // Vota em Branco
-function branco() {
+const branco = () => {
     let { totalA = 0, totalB = 0 } = document.cookie ? JSON.parse(document.cookie) : {}
     if (totalA < totalB) {
         totalB++
@@ -83,10 +83,10 @@ function branco() {
 }
 
 // Teclado numérico
-function botao(n) {
+const botao = (n) => {
     numero.value += n
   }
 
-function corrige() {
+const corrige = () => {
     numero.value = ''
 }
